@@ -1,2 +1,20 @@
-09 四月 2013 00:21:23,248 INFO  ~ Starting C:\Users\xcm\Documents\javaprojects\server
-09 四月 2013 00:21:23,794 WARN  ~ You're running Play! in DEV mode
+17 四月 2013 10:26:54,991 INFO  ~ Starting C:\Users\xcm\Documents\javaprojects\server
+17 四月 2013 10:26:55,521 WARN  ~ You're running Play! in DEV mode
+17 四月 2013 10:26:55,615 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+17 四月 2013 10:27:03,228 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+17 四月 2013 10:27:04,101 ERROR ~ HHH000389: Unsuccessful: drop table 单元
+17 四月 2013 10:27:04,101 ERROR ~ Table "单元" not found; SQL statement:
+drop table 单元 [42102-166]
+17 四月 2013 10:27:04,101 ERROR ~ HHH000389: Unsuccessful: drop table 楼层
+17 四月 2013 10:27:04,101 ERROR ~ Table "楼层" not found; SQL statement:
+drop table 楼层 [42102-166]
+17 四月 2013 10:27:04,101 ERROR ~ HHH000389: Unsuccessful: drop table 楼盘
+17 四月 2013 10:27:04,101 ERROR ~ Table "楼盘" not found; SQL statement:
+drop table 楼盘 [42102-166]
+17 四月 2013 10:27:04,101 ERROR ~ HHH000389: Unsuccessful: drop table 楼阁
+17 四月 2013 10:27:04,101 ERROR ~ Table "楼阁" not found; SQL statement:
+drop table 楼阁 [42102-166]
+17 四月 2013 10:27:04,101 ERROR ~ HHH000389: Unsuccessful: drop table 用户组
+17 四月 2013 10:27:04,101 ERROR ~ Table "用户组" not found; SQL statement:
+drop table 用户组 [42102-166]
+17 四月 2013 10:27:04,179 INFO  ~ Application 'server' is now started !

@@ -6,10 +6,10 @@
 GET     /                                       Application.index
 GET     /users                                  Users.index
 GET     /danyuans                               Danyuans.index
-GET     /                                       Application.index
-GET     /                                       Application.index
+GET     /loucengs                               Loucengs.index
+GET     /louges                                 Louges.index
+GET     /loupans                                Loupans.index
 
-GET     /                                       Application.index
 
 
 

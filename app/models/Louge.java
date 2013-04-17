@@ -1,8 +1,10 @@
 package models;
 
+import play.db.jpa.GenericModel;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -14,8 +16,9 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="楼阁")
-public class Louge extends Model {
+public class Louge extends GenericModel {
     public String 楼阁名称;
+    @Id
     public String 楼阁编号;
     public String 楼盘编号;
 
