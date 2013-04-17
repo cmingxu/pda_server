@@ -1,0 +1,4 @@
+window下安装play步骤
+
+1， 确保sqlserver2000 的1433端口已经打卡； 如果没打开需要安装sqlserver2000的sp3； 微软官方可以下载
+2， 注意sqlserver的jdbc不要最新版， 最新版不支持老版的sqlserver；
