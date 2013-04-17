@@ -9,6 +9,10 @@ import models.*;
 
 public class Application extends Controller {
 
+    @Before
+    public static void logRequest(){
+       Logger.debug(request.method + "::" + request.url);
+    }
     public static void index() {
         render();
     }

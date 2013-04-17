@@ -12,7 +12,7 @@ import java.util.List;
  * Time: 下午8:13
  * To change this template use File | Settings | File Templates.
  */
-public class Users extends Controller {
+public class Users extends Application {
     public static void index(){
         List<User> users = User.findAll();
         renderJSON(users);
