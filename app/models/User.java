@@ -19,4 +19,12 @@ public class User extends Model {
         this.用户名 = 用户名;
     }
 
+    public static User authenticate(String login, String password){
+        return (User)User.find("用户名=% and 密码=%", login, calculatedPassword(password)).fetch().get(0);
+    }
+
+    private static  String calculatedPassword(String password){
+        return password                ;
+    }
+
 }

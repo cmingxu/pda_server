@@ -9,6 +9,12 @@ GET     /danyuans                               Danyuans.index
 GET     /loucengs                               Loucengs.index
 GET     /louges                                 Louges.index
 GET     /loupans                                Loupans.index
+GET     /zhuhus                                 Zhuhus.index
+GET     /weixiudans                             Weixiudans.index
+POST    /weixiudans                             Weixiudans.create
+
+
+
 
 
 
