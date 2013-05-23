@@ -19,7 +19,7 @@ public class Weixiudans extends Application {
         renderJSON(weixiudans);
     }
 
-        @BodyParser.Of(value = Json.class)
+
     public static void create(){
 
     }
