@@ -20,7 +20,6 @@ public class Weixiudans extends Application {
         renderJSON(weixiudans);
     }
 
-
     public static void create(){
         System.out.print(params.get("mBaoxiuRiqi"));
         System.out.print(params.get("mDanyuanName"));
