@@ -11,6 +11,7 @@ import models.*;
 public class Application extends Controller {
     private static final String WWW_AUTHENTICATE = "WWW-Authenticate";
     private static final String REALM = "Basic realm=\"Your Realm Here\"";
+    public static String current_user;
 
     @Before
     public static void logRequest(){
@@ -43,10 +44,13 @@ public class Application extends Controller {
         String password = credString[1];
         User authUser = User.authenticate(username, password);
 
+
         if (authUser == null){
             noauth();
         }
 
+
+         current_user = "System";
     }
 
 

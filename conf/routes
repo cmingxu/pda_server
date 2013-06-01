@@ -8,10 +8,12 @@ GET     /users                                  Users.index
 GET     /danyuans                               Danyuans.index
 GET     /loucengs                               Loucengs.index
 GET     /louges                                 Louges.index
-GET     /loupans                                Loupans.index
 GET     /zhuhus                                 Zhuhus.index
+GET     /loupans                                Loupans.index
 GET     /weixiudans                             Weixiudans.index
 POST    /weixiudans                             Weixiudans.create
+POST    /jiedan                                 Syssends.jiedan
+
 
 
 
@@ -27,3 +29,8 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+
+
+
+

@@ -28,6 +28,7 @@ public class Weixiudan extends Model {
     public String 单元编号;
     public String 住户编号;
     public String 报修人;
+    public int 维修人类别;
     public String 报修人联系方式;
     public String 报修内容;
     public String 接单人;
@@ -37,18 +38,22 @@ public class Weixiudan extends Model {
     public String 完成状态;
     public String 维修类别ID;
     public String 维修项目ID;
-    public String 照片;
+//    public String 照片;
     public String 维修种类;
     public String 完成情况;
     public String 楼盘编号;
     public String 楼阁编号;
     public String 楼层名称;
     public String 报修方式;
+    public int 打印次数;
+
+    public Weixiudan() {
+    }
 
     public Weixiudan(String 单据日期, String 单据编号, String 单据编号序号, String 单据编号前缀, String 创建人, String 创建日期,
                      String 来源, String 来源ID, String 维修范围, String 维修地点, String 单元编号, String 住户编号, String 报修人,
                      String 报修人联系方式, String 报修内容, String 接单人, String 是否接单, String 接单时间, String 维修人,
-                     String 完成状态, String 维修类别ID, String 维修项目ID, String 照片, String 维修种类, String 完成情况,
+                     String 完成状态, String 维修类别ID, String 维修项目ID, String 维修种类, String 完成情况,
                      String 楼盘编号, String 楼阁编号, String 楼层名称, String 报修方式) {
         this.单据日期 = 单据日期;
         this.单据编号 = 单据编号;
@@ -72,12 +77,14 @@ public class Weixiudan extends Model {
         this.完成状态 = 完成状态;
         this.维修类别ID = 维修类别ID;
         this.维修项目ID = 维修项目ID;
-        this.照片 = 照片;
+//        this.照片 = 照片;
         this.维修种类 = 维修种类;
         this.完成情况 = 完成情况;
         this.楼盘编号 = 楼盘编号;
         this.楼阁编号 = 楼阁编号;
         this.楼层名称 = 楼层名称;
         this.报修方式 = 报修方式;
+        this.维修人类别 = 1;
+        this.打印次数 = 1;
     }
 }
