@@ -13,7 +13,9 @@ GET     /loupans                                Loupans.index
 GET     /weixiudans                             Weixiudans.index
 POST    /weixiudans                             Weixiudans.create
 GET     /syssends                               Syssends.index
-GET    /jiedan                                 Syssends.jiedan
+GET     /jiedan                                 Syssends.jiedan
+GET     /wancheng                               Syssends.wancheng
+
 
 
 
