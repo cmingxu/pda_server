@@ -15,13 +15,23 @@ import java.util.List;
 public class Syssends extends Application {
     public static void index(){
         List<Syssend> syssends = Syssend.find("ifsend = '0'").fetch();
+//        send set to 1
         renderJSON(syssends);
     }
 
-    public static void jiedan(long id){
+    public static void jiedan(){
+        int id = new Integer(params.get("syssend_id")).intValue();
         Syssend syssend = Syssend.findById(id);
         syssend.ifck = "1";
         syssend.save();
-        ok();
+        renderJSON("{}");
+    }
+
+    public static void wancheng(){
+        int id = new Integer(params.get("syssend_id")).intValue();
+        Syssend syssend = Syssend.findById(id);
+        syssend.ifComplete= "1";
+        syssend.save();
+        renderJSON("{}");
     }
 }
