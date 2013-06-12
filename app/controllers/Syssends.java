@@ -15,8 +15,13 @@ import java.util.List;
  */
 public class Syssends extends Application {
     public static void index(){
-        List<Syssend> syssends = Syssend.find("ifsend = '0' and jsr='" +current_user +"' and style='维修'").fetch();
-//        send set to 1
+        List<Syssend> syssends = Syssend.find("ifsend = '0' and ifck='0' and jsr='" +current_user +"' and style='维修'").fetch();
+
+        Logger.debug("ifsend = '0' and jsr='" +current_user +"' and style='维修'");
+        for(Syssend s : syssends){
+            s.ifsend = "1";
+            s.save();
+        }
         renderJSON(syssends);
     }
 
