@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Syssends extends Application {
     public static void index(){
-        List<Syssend> syssends = Syssend.find("ifsend = '0' and jsr=? and style=?", current_user, "维修").fetch();
+        List<Syssend> syssends = Syssend.find("ifsend = '0' and jsr='?' and style='?'", current_user, "维修").fetch();
 //        send set to 1
         renderJSON(syssends);
     }

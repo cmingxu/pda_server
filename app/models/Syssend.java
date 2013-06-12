@@ -32,7 +32,7 @@ public class Syssend extends GenericModel{
     public String ifComplete;
     public String timelimit;
 
-    public Syssend(String sendtime, String sendperson, String retime, String repersoon, String style, String content, String wyid, String ifsend, String jsr, String ifck, String iftsfs, String taskType, String ifComplete, String timelimit) {
+    public Syssend(String sendtime, String sendperson, String retime, String reperson, String style, String content, String wyid, String ifsend, String jsr, String ifck, String iftsfs, String taskType, String ifComplete, String timelimit) {
         this.sendtime = sendtime;
         this.sendperson = sendperson;
         this.retime = retime;
@@ -44,7 +44,7 @@ public class Syssend extends GenericModel{
         this.jsr = jsr;
         this.ifck = ifck;
         this.iftsfs = iftsfs;
-        TaskType = taskType;
+        this.TaskType = taskType;
         this.ifComplete = ifComplete;
         this.timelimit = timelimit;
     }
