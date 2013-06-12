@@ -46,6 +46,7 @@ public class Weixiudan extends Model {
     public String 楼层名称;
     public String 报修方式;
     public int 打印次数;
+//    public String 照片路径;
 
     public Weixiudan() {
     }

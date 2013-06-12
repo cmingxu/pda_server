@@ -1,7 +1,9 @@
 package controllers;
 
 import models.Weixiudan;
+import play.Logger;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -20,14 +22,33 @@ public class Weixiudans extends Application {
         renderJSON(weixiudans);
     }
 
-    public static void create(){
-        System.out.print(params.get("mBaoxiuRiqi"));
-        System.out.print(params.get("mDanyuanName"));
-        System.out.print(params.get("mDanyuanBianhao"));
-        System.out.print(params.get("mYezhuPhone"));
+
+    public static void create(File image0, File image1, File image2){
+        String attach_dir = "C:\\\\attachments";
+
+        StringBuilder sb = new StringBuilder();
+        if (image0 != null) {
+            sb.append(image0.getName());
+            image0.renameTo(new File(attach_dir + "\\" + image0.getName()));
+        }
+
+        if (image1 != null) {
+            sb.append(",");
+            sb.append(image1.getName());
+            image1.renameTo(new File(attach_dir + "\\" + image1.getName()));
+        }
+
+        if(image2 != null){
+            sb.append(",");
+            sb.append(image2.getName());
+            image2.renameTo(new File(attach_dir + "\\" + image2.getName()));
+        }
+
+
+
 
         System.out.print("mBaoxiuriqi=====================================");
-       Weixiudan weixiudan = new Weixiudan();
+        Weixiudan weixiudan = new Weixiudan();
         weixiudan.单据日期 = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
         weixiudan.单据编号 = "XX";
         weixiudan.单据编号序号 = "1234";

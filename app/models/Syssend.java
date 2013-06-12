@@ -20,7 +20,7 @@ public class Syssend extends GenericModel{
     public String sendtime;
     public String sendperson;
     public String retime;
-    public String repersoon;
+    public String reperson;
     public String style;
     public String content;
     public String wyid;
@@ -36,7 +36,7 @@ public class Syssend extends GenericModel{
         this.sendtime = sendtime;
         this.sendperson = sendperson;
         this.retime = retime;
-        this.repersoon = repersoon;
+        this.reperson = reperson;
         this.style = style;
         this.content = content;
         this.wyid = wyid;
