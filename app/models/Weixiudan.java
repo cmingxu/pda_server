@@ -45,6 +45,8 @@ public class Weixiudan extends Model {
     public String 楼阁编号;
     public String 楼层名称;
     public String 报修方式;
+    public String 修改人;
+    public String 修改人联系方式;
     public int 打印次数;
 //    public String 照片路径;
 
@@ -87,5 +89,9 @@ public class Weixiudan extends Model {
         this.报修方式 = 报修方式;
         this.维修人类别 = 1;
         this.打印次数 = 1;
+    }
+
+    public static  Weixiudan last(){
+        return  (Weixiudan)Weixiudan.find("order by 单据编号 desc").first();
     }
 }

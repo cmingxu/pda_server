@@ -46,19 +46,25 @@ public class Weixiudans extends Application {
 
 
 
+        Weixiudan last = Weixiudan.last();
+
 
         System.out.print("mBaoxiuriqi=====================================");
         Weixiudan weixiudan = new Weixiudan();
         weixiudan.单据日期 = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
-        weixiudan.单据编号 = "XX";
-        weixiudan.单据编号序号 = "1234";
-        weixiudan.单据编号前缀 = "XX";
-        weixiudan.创建人 = "";
-        weixiudan.创建日期 = params.get("mBaoxiuRiqi");
-        weixiudan.来源 = "";
+
+        System.out.println(last.单据编号序号);
+        weixiudan.单据编号序号 = "" + (Integer.valueOf(last.单据编号序号) + 1);
+        weixiudan.单据编号前缀 = "WX";
+        weixiudan.单据编号 = String.format("WX%010d", Integer.parseInt(weixiudan.单据编号序号));
+        weixiudan.创建人 = params.get("mBaoxiuren");
+        weixiudan.创建日期 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());;
+        weixiudan.来源 = "PDA";
         weixiudan.来源ID = "";
-        weixiudan.维修范围 = "";
+        weixiudan.维修范围 = params.get("mBaoxiuLeibie");;
         weixiudan.维修地点 = params.get("mLougeName") + params.get("mLoucengName") + params.get("mDanyuanName");
+        weixiudan.修改人 = params.get("mBaoxiuren");
+        weixiudan.修改人联系方式 = params.get("mYezhuPhone");
         weixiudan.单元编号 = params.get("mDanyuanBianhao");
         weixiudan.住户编号 = params.get("mZhuhuBianhao");
         weixiudan.报修人 = params.get("mBaoxiuren");
@@ -71,13 +77,13 @@ public class Weixiudans extends Application {
         weixiudan.完成状态 = "0";
         weixiudan.维修类别ID = "";
         weixiudan.维修项目ID = "";
-        //weixiudan.照片 = "";
-        weixiudan.维修种类 = params.get("mBaoxiuLeibie");
+        weixiudan.维修种类 = "";
         weixiudan.完成情况 = "";
         weixiudan.楼盘编号 = params.get("mLoupanBianhao");
         weixiudan.楼阁编号 = params.get("mLougeBianhao");
         weixiudan.楼层名称 = params.get("mLoucengName");
         weixiudan.报修方式 = "pad";
+        System.out.println(weixiudan.创建日期);
         weixiudan.save().toString();
         System.out.print(weixiudan.save());
         weixiudan.save();
