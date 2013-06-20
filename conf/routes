@@ -12,9 +12,9 @@ GET     /zhuhus                                 Zhuhus.index
 GET     /loupans                                Loupans.index
 GET     /weixiudans                             Weixiudans.index
 POST    /weixiudans                             Weixiudans.create
-GET     /syssends                               Syssends.index
-GET     /jiedan                                 Syssends.jiedan
-GET     /wancheng                               Syssends.wancheng
+GET     /notices                                Notices.index
+GET     /jiedan                                 Notices.jiedan
+GET     /wancheng                               Notices.wancheng
 
 
 

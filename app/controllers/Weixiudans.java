@@ -51,7 +51,7 @@ public class Weixiudans extends Application {
 
         System.out.print("mBaoxiuriqi=====================================");
         Weixiudan weixiudan = new Weixiudan();
-        weixiudan.单据日期 = new SimpleDateFormat("yyyy/MM/dd").format(new Date());
+        weixiudan.单据日期 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
 
         System.out.println(last.单据编号序号);
         weixiudan.单据编号序号 = "" + (Integer.valueOf(last.单据编号序号) + 1);

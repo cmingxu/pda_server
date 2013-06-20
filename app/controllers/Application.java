@@ -20,6 +20,7 @@ public class Application extends Controller {
     public static void get_user(){
         if (request.headers.get("authorization") != null) {
 
+            Logger.debug(request.headers.get("authorization").value());
             String authorization = request.headers.get("authorization").values.get(0);
             current_user = authorization.split(":")[0];
             if(current_user != null){
