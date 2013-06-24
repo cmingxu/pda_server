@@ -21,9 +21,10 @@ public class Notices extends Application {
         renderJSON(notices);
     }
     public static void jiedan(){
-        int id = new Integer(params.get("id")).intValue();
+        long id = new Integer(params.get("id")).longValue();
+
         Notice notice = Notice.findById(id);
-        Weixiudan weixidan = Weixiudan.find("where id =" + notice.单据id).first();
+        Weixiudan weixidan = Weixiudan.find(" ID=" + notice.单据id).first();
 
         notice.是否接收 = "1";
         notice.接收时间 =  new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
@@ -40,10 +41,10 @@ public class Notices extends Application {
     }
 
     public static void daixiu(){
-        int id = new Integer(params.get("id")).intValue();
+        long id = new Integer(params.get("id")).longValue();
         String wanchengqingkuang = params.get("desc");
         Notice notice = Notice.findById(id);
-        Weixiudan weixidan = Weixiudan.find("where id =" + notice.单据id).first();
+        Weixiudan weixidan = Weixiudan.find(" ID=" + notice.单据id).first();
 
         if (weixidan != null) {
             weixidan.完成状态 = "2";
@@ -54,10 +55,11 @@ public class Notices extends Application {
     }
 
     public static void wancheng(){
-        int id = new Integer(params.get("id")).intValue();
+        long id = new Integer(params.get("id")).longValue();
+
         String wanchengqingkuang = params.get("desc");
         Notice notice = Notice.findById(id);
-        Weixiudan weixidan = Weixiudan.find("where id =" + notice.单据id).first();
+        Weixiudan weixidan = Weixiudan.find(" ID=" + notice.单据id).first();
 
         notice.是否完成 = "1";
         notice.完成时间 =  new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());

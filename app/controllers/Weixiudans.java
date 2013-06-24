@@ -44,8 +44,6 @@ public class Weixiudans extends Application {
             image2.renameTo(new File(attach_dir + "\\" + image2.getName()));
         }
 
-
-
         Weixiudan last = Weixiudan.last();
 
 

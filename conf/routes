@@ -31,8 +31,7 @@ GET     /dicts                                  Dicts.index
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
-# Map stati,,,mxcm
-#resources from the /app/public folder to the /public path
+# Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
 # Catch all
