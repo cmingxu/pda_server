@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class Notices extends Application {
     public static void index(){
-        List<Notice> notices = Notice.find("接收人='" + current_user + "'").fetch();
+        List<Notice> notices = Notice.find("接收人='" + current_user + "' and 是否接收='0'").fetch();
         renderJSON(notices);
     }
     public static void jiedan(){
