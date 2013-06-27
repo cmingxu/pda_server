@@ -24,7 +24,7 @@ public class Notices extends Application {
         long id = new Integer(params.get("id")).longValue();
 
         Notice notice = Notice.findById(id);
-        Weixiudan weixidan = Weixiudan.findById(notice.单据id);
+        Weixiudan weixidan = Weixiudan.findById(Long.parseLong(notice.单据id));
 
         notice.是否接收 = "1";
         notice.接收时间 =  new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
@@ -44,7 +44,7 @@ public class Notices extends Application {
         long id = new Integer(params.get("id")).longValue();
         String wanchengqingkuang = params.get("desc");
         Notice notice = Notice.findById(id);
-        Weixiudan weixidan = Weixiudan.findById(notice.单据id);
+        Weixiudan weixidan = Weixiudan.findById(Long.parseLong(notice.单据id));
 
         if (weixidan != null) {
             weixidan.完成状态 = "2";
@@ -59,7 +59,7 @@ public class Notices extends Application {
 
         String wanchengqingkuang = params.get("desc");
         Notice notice = Notice.findById(id);
-        Weixiudan weixidan = Weixiudan.findById(notice.单据id);
+        Weixiudan weixidan = Weixiudan.findById(Long.parseLong(notice.单据id));
 
         notice.是否完成 = "1";
         notice.完成时间 =  new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
