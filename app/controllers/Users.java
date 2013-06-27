@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Users extends Application {
     public static void index(){
-        List<User> users = User.find("用户组='PDA用户组'").fetch();
+        List<User> users = User.find("移动用户=1").fetch();
         renderJSON(users);
     }
 }
