@@ -51,6 +51,9 @@ public class Notices extends Application {
         if (weixidan != null) {
             weixidan.完成状态 = "2";
             weixidan.待修原因 = wanchengqingkuang;
+            weixidan.维修开始时间 =  "";
+            weixidan.维修终止时间 =  "";
+
             weixidan.save();
         }
         renderJSON("{}");

@@ -105,7 +105,7 @@
       <file leaf-file-name="Notices.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="63" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.37422037">
+            <state line="54" column="27" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.6860707">
               <folding />
             </state>
           </provider>
@@ -123,7 +123,7 @@
       <file leaf-file-name="Weixiudan.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Weixiudan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="56" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
+            <state line="50" column="24" selection-start="1145" selection-end="1151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -687,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Weixiudan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="56" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Loupan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" />
@@ -740,9 +733,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Weixiudan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="24" selection-start="1145" selection-end="1151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="63" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.37422037">
+        <state line="54" column="27" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.6860707">
           <folding />
         </state>
       </provider>
