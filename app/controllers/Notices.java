@@ -36,6 +36,7 @@ public class Notices extends Application {
             weixidan.维修开始时间 =   new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
             weixidan.接单人 = current_user;
             weixidan.维修人 = current_user;
+            weixidan.接单时间 =  weixidan.维修开始时间;
             weixidan.save();
         }
         renderJSON("{}");

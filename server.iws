@@ -105,7 +105,7 @@
       <file leaf-file-name="Notices.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="28" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.87318087">
+            <state line="39" column="63" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.37422037">
               <folding />
             </state>
           </provider>
@@ -129,15 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Zhuhu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Zhuhu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Danyuan.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Danyuan.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -150,7 +141,16 @@
       <file leaf-file-name="Dict.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Dict.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
+            <state line="16" column="34" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dicts.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Dicts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="29" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -661,11 +661,6 @@
         <state line="16" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Dicts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="83" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="44" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
@@ -709,11 +704,6 @@
         <state line="18" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Dict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Danyuan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" />
@@ -736,9 +726,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Dict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="34" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Dicts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="29" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="28" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.87318087">
+        <state line="39" column="63" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.37422037">
           <folding />
         </state>
       </provider>
