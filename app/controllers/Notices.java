@@ -36,6 +36,7 @@ public class Notices extends Application {
             weixidan.维修开始时间 =   new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
             weixidan.接单人 = current_user;
             weixidan.维修人 = current_user;
+            weixidan.save();
         }
         renderJSON("{}");
     }
@@ -69,6 +70,7 @@ public class Notices extends Application {
             weixidan.完成状态 = "4";
             weixidan.完成情况 = wanchengqingkuang;
             weixidan.维修终止时间 =   new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
+            weixidan.save();
        ;
         }
         renderJSON("{}");

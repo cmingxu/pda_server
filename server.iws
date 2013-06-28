@@ -105,7 +105,16 @@
       <file leaf-file-name="Notices.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="45" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.70893973">
+            <state line="72" column="28" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.87318087">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.conf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/application.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="149" column="77" selection-start="4226" selection-end="4226" vertical-scroll-proportion="-32.333332">
               <folding />
             </state>
           </provider>
@@ -156,15 +165,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Notice.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Notice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/User.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -210,13 +210,13 @@
         <option value="$PROJECT_DIR$/app/controllers/Syssends.java" />
         <option value="$PROJECT_DIR$/app/models/Notice.java" />
         <option value="$PROJECT_DIR$/app/controllers/Application.java" />
-        <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/models/Dict.java" />
         <option value="$PROJECT_DIR$/app/controllers/Dicts.java" />
         <option value="$PROJECT_DIR$/app/models/Weixiudan.java" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/controllers/Weixiudans.java" />
         <option value="$PROJECT_DIR$/app/controllers/Users.java" />
+        <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/controllers/Notices.java" />
       </list>
     </option>
@@ -651,11 +651,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="11" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.6860707" />
@@ -734,9 +729,16 @@
         <state line="40" column="17" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="77" selection-start="4226" selection-end="4226" vertical-scroll-proportion="-32.333332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="45" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.70893973">
+        <state line="72" column="28" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.87318087">
           <folding />
         </state>
       </provider>
