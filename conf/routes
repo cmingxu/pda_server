@@ -15,7 +15,13 @@ POST    /weixiudans                             Weixiudans.create
 GET     /notices                                Notices.index
 GET     /jiedan                                 Notices.jiedan
 GET     /wancheng                               Notices.wancheng
-GET     /daixiu                                 Notices.daixiu
+GET     /xunjiandans                            Xunjiandans.index
+GET     /xunjiandanmingxis                      Xunjiandanmingxis.index
+GET     /xunjiandians                           Xunjiandians.index
+GET     /xunjianxiangmus                        Xunjianxiangmus.index
+GET     /xunjianzhis                            Xunjianzhis.index
+
+
 
 GET     /dicts                                  Dicts.index
 
