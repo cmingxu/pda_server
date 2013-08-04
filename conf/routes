@@ -20,7 +20,8 @@ GET     /xunjiandanmingxis                      Xunjiandanmingxis.index
 GET     /xunjiandians                           Xunjiandians.index
 GET     /xunjianxiangmus                        Xunjianxiangmus.index
 GET     /xunjianzhis                            Xunjianzhis.index
-
+POST    /xunjiandans                            Xunjiandans.update
+POST    /xunjiandanmingxis                      Xunjiandanmingxis.update
 
 
 GET     /dicts                                  Dicts.index
@@ -42,6 +43,9 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+
+
 
 
 

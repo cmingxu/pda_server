@@ -13,7 +13,23 @@ import java.util.List;
  */
 public class Xunjiandans extends Application {
     public static void index(){
-        List<Xunjiandan> xunjiandans = Xunjiandan.findAll();
+        System.out.println(params.get("before"));
+        System.out.println( Xunjiandan.find("是否完成=0 and 计划起始时间 < '" + params.get("before") + "'").toString());
+        List<Xunjiandan> xunjiandans = Xunjiandan.find("是否完成=0 and 计划起始时间 < '" + params.get("before") + "'").fetch();
         renderJSON(xunjiandans);
+    }
+
+    public static void update(){
+        System.out.println(params.get("id"));
+        System.out.println(params.get("minTime"));
+        System.out.println(params.get("maxTime"));
+
+       Xunjiandan xunjiandan = Xunjiandan.find("id=" + params.get("id")).first();
+        xunjiandan.巡检终止时间 = params.get("maxTime");
+        xunjiandan.巡检起始时间 = params.get("minTime");
+        xunjiandan.是否完成 = true;
+
+        xunjiandan.save();
+        renderJSON("{}");
     }
 }
