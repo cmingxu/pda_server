@@ -53,7 +53,7 @@ public class Weixiudans extends Application {
 
         System.out.println(last.单据编号序号);
         if (last.单据编号序号 == null) {
-            weixiudan.单据编号序号 = "";
+            weixiudan.单据编号序号 = "000001";
 
         }          else{
         weixiudan.单据编号序号 = "" + (Integer.valueOf(last.单据编号序号) + 1);
