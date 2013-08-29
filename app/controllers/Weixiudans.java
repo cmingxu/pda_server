@@ -52,7 +52,12 @@ public class Weixiudans extends Application {
         weixiudan.单据日期 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
 
         System.out.println(last.单据编号序号);
+        if (last.单据编号序号 == null) {
+            weixiudan.单据编号序号 = "";
+
+        }          else{
         weixiudan.单据编号序号 = "" + (Integer.valueOf(last.单据编号序号) + 1);
+        }
         weixiudan.单据编号前缀 = "WX";
         weixiudan.单据编号 = String.format("WX%010d", Integer.parseInt(weixiudan.单据编号序号));
         weixiudan.创建人 = params.get("mBaoxiuren");
