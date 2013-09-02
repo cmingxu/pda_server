@@ -53,7 +53,7 @@ public class Weixiudans extends Application {
 
         System.out.println(last.单据编号序号);
 
-        weixiudan.单据编号序号 = "" + (System.currentTimeMillis());
+        weixiudan.单据编号序号 = "" + (System.currentTimeMillis() % 1000000000);
         System.out.print("mBaoxiuriqi=====================================");
 
         System.out.println(weixiudan.单据编号序号);
