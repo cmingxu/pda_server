@@ -59,7 +59,7 @@ public class Weixiudans extends Application {
         System.out.println(weixiudan.单据编号序号);
 
         weixiudan.单据编号前缀 = "WX";
-        weixiudan.单据编号 = String.format("WX%020s", weixiudan.单据编号序号);
+        weixiudan.单据编号 =  "WX" + weixiudan.单据编号序号;
 
         System.out.println(weixiudan.单据编号);
         weixiudan.创建人 = params.get("mBaoxiuren");
