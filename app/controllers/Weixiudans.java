@@ -62,12 +62,12 @@ public class Weixiudans extends Application {
         weixiudan.单据编号 =  "WX" + weixiudan.单据编号序号;
 
         System.out.println(weixiudan.单据编号);
-        weixiudan.创建人 = params.get("mBaoxiuren");
+        weixiudan.创建人 = current_user;
         weixiudan.创建日期 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
         weixiudan.来源 = "PDA";
         weixiudan.来源ID = "";
         weixiudan.维修范围 = params.get("mBaoxiuLeibie");
-        weixiudan.维修地点 = params.get("mLougeName") + params.get("mLoucengName") + params.get("mDanyuanName");
+        weixiudan.维修地点 = params.get("mLoupanName") + "/" + params.get("mDanyuanName");
         weixiudan.修改人 = params.get("mBaoxiuren");
         weixiudan.修改人联系方式 = params.get("mYezhuPhone");
         weixiudan.单元编号 = params.get("mDanyuanBianhao");
@@ -77,7 +77,6 @@ public class Weixiudans extends Application {
         weixiudan.报修内容 = params.get("mBaoxiuNeirong");
         weixiudan.接单人 = "";
         weixiudan.是否接单 = "0";
-        weixiudan.接单时间 = "";
         weixiudan.维修人 = "";
         weixiudan.完成状态 = "0";
         weixiudan.维修类别ID = "";
