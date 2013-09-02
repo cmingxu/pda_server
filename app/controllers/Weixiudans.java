@@ -53,7 +53,7 @@ public class Weixiudans extends Application {
 
         System.out.println(last.单据编号序号);
 
-        weixiudan.单据编号序号 = "" + (Integer.valueOf(last.单据编号序号) + 1);
+        weixiudan.单据编号序号 = "" + (Integer.valueOf(last.单据编号序号) + 2);
 
         weixiudan.单据编号前缀 = "WX";
         weixiudan.单据编号 = String.format("WX%010d", Integer.parseInt(weixiudan.单据编号序号));
@@ -63,7 +63,7 @@ public class Weixiudans extends Application {
         weixiudan.创建日期 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());;
         weixiudan.来源 = "PDA";
         weixiudan.来源ID = "";
-        weixiudan.维修范围 = params.get("mBaoxiuLeibie");;
+        weixiudan.维修范围 = params.get("mBaoxiuLeibie");
         weixiudan.维修地点 = params.get("mLougeName") + params.get("mLoucengName") + params.get("mDanyuanName");
         weixiudan.修改人 = params.get("mBaoxiuren");
         weixiudan.修改人联系方式 = params.get("mYezhuPhone");
