@@ -18,11 +18,13 @@ public class Louceng extends Model {
     public String 楼层编号;
     public String 楼层名称;
     public String 楼阁编号;
+    public String 梯数;
 
 
-    public Louceng(String 楼层编号, String 楼层名称, String 楼阁编号) {
+    public Louceng(String 楼层编号, String 楼层名称, String 楼阁编号, String 梯数) {
         this.楼层编号 = 楼层编号;
         this.楼层名称 = 楼层名称;
         this.楼阁编号 = 楼阁编号;
+        this.梯数 = 梯数;
     }
 }
