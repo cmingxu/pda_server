@@ -54,6 +54,9 @@ public class Weixiudans extends Application {
         System.out.println(last.单据编号序号);
 
         weixiudan.单据编号序号 = "" + (Integer.valueOf(last.单据编号序号) + 2);
+        System.out.print("mBaoxiuriqi=====================================");
+
+        System.out.println(weixiudan.单据编号序号);
 
         weixiudan.单据编号前缀 = "WX";
         weixiudan.单据编号 = String.format("WX%010d", Integer.parseInt(weixiudan.单据编号序号));
