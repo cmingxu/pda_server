@@ -52,12 +52,9 @@ public class Weixiudans extends Application {
         weixiudan.单据日期 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date());
 
         System.out.println(last.单据编号序号);
-        if (last.单据编号序号 == null) {
-            weixiudan.单据编号序号 = "000001";
 
-        }          else{
         weixiudan.单据编号序号 = "" + (Integer.valueOf(last.单据编号序号) + 1);
-        }
+
         weixiudan.单据编号前缀 = "WX";
         weixiudan.单据编号 = String.format("WX%010d", Integer.parseInt(weixiudan.单据编号序号));
         weixiudan.创建人 = params.get("mBaoxiuren");
@@ -88,6 +85,7 @@ public class Weixiudans extends Application {
         weixiudan.报修方式 = "pad";
         System.out.println(weixiudan.创建日期);
         weixiudan.save().toString();
+
         System.out.print(weixiudan.save());
         weixiudan.save();
         renderJSON("{}");
