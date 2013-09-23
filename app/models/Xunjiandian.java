@@ -23,9 +23,11 @@ public class Xunjiandian extends Model {
     public String  房产区域;
     public String  类别;
     public String  源类型;
+    public String  编码;
 
 
-    public Xunjiandian(String 名称, String 编号, String 楼盘编号, String 楼阁编号, String 楼层名称, String 房产区域, String 类别, String 源类型) {
+
+    public Xunjiandian(String 名称, String 编号, String 楼盘编号, String 楼阁编号, String 楼层名称, String 房产区域, String 类别, String 源类型, String 编码) {
         this.名称 = 名称;
         this.编号 = 编号;
         this.楼盘编号 = 楼盘编号;
@@ -34,5 +36,6 @@ public class Xunjiandian extends Model {
         this.房产区域 = 房产区域;
         this.类别 = 类别;
         this.源类型 = 源类型;
+        this.编码 = 编码;
     }
 }

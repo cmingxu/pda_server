@@ -9,6 +9,7 @@ GET     /danyuans                               Danyuans.index
 GET     /loucengs                               Loucengs.index
 GET     /louges                                 Louges.index
 GET     /zhuhus                                 Zhuhus.index
+GET     /danyuanbiaochaobiaos                   DanyuanbiaoChaobiaos.index
 GET     /loupans                                Loupans.index
 GET     /weixiudans                             Weixiudans.index
 POST    /weixiudans                             Weixiudans.create
@@ -22,6 +23,7 @@ GET     /xunjianxiangmus                        Xunjianxiangmus.index
 GET     /xunjianzhis                            Xunjianzhis.index
 POST    /xunjiandans                            Xunjiandans.update
 POST    /xunjiandanmingxis                      Xunjiandanmingxis.update
+POST    /chaobiao                               DanyuanbiaoChaobiaos.update
 
 
 GET     /dicts                                  Dicts.index

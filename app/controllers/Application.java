@@ -23,9 +23,10 @@ public class Application extends Controller {
             Logger.debug(request.headers.get("authorization").value());
             String authorization = request.headers.get("authorization").values.get(0);
             current_user = authorization.split(":")[0];
-            if(current_user != null){
+        }
+        if(current_user != null){
+            current_user = "";
             Logger.debug(current_user);
-            }
         }
     }
 
