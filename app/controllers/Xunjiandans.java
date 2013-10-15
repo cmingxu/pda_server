@@ -15,7 +15,9 @@ public class Xunjiandans extends Application {
     public static void index(){
         System.out.println(params.get("before"));
         System.out.println( Xunjiandan.find("是否完成=0 and 计划起始时间 < '" + params.get("before") + "'").toString());
+//        List<Xunjiandan> xunjiandans = Xunjiandan.find("是否完成=0 and 计划起始时间 < '" + params.get("before") + "' and 巡检人='" + current_user + "'").fetch();
         List<Xunjiandan> xunjiandans = Xunjiandan.find("是否完成=0 and 计划起始时间 < '" + params.get("before") + "'").fetch();
+
         renderJSON(xunjiandans);
     }
 
