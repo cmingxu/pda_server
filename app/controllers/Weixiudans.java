@@ -24,25 +24,6 @@ public class Weixiudans extends Application {
 
 
     public static void create(File image0, File image1, File image2){
-        String attach_dir = "C:\\\\attachments";
-
-        StringBuilder sb = new StringBuilder();
-        if (image0 != null) {
-            sb.append(image0.getName());
-            image0.renameTo(new File(attach_dir + "\\" + image0.getName()));
-        }
-
-        if (image1 != null) {
-            sb.append(",");
-            sb.append(image1.getName());
-            image1.renameTo(new File(attach_dir + "\\" + image1.getName()));
-        }
-
-        if(image2 != null){
-            sb.append(",");
-            sb.append(image2.getName());
-            image2.renameTo(new File(attach_dir + "\\" + image2.getName()));
-        }
 
         Weixiudan last = Weixiudan.last();
 
@@ -92,6 +73,28 @@ public class Weixiudans extends Application {
 
         System.out.print(weixiudan.save());
         weixiudan.save();
+
+
+        String attach_dir = "C:\\\\attachments" + "\\" + weixiudan.id;
+
+        StringBuilder sb = new StringBuilder();
+        if (image0 != null) {
+            sb.append(image0.getName());
+            image0.renameTo(new File(attach_dir + "\\" + image0.getName()));
+        }
+
+        if (image1 != null) {
+            sb.append(",");
+            sb.append(image1.getName());
+            image1.renameTo(new File(attach_dir + "\\" + image1.getName()));
+        }
+
+        if(image2 != null){
+            sb.append(",");
+            sb.append(image2.getName());
+            image2.renameTo(new File(attach_dir + "\\" + image2.getName()));
+        }
+
         renderJSON("{}");
 //        ok();
     }

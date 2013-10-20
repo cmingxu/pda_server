@@ -102,33 +102,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Notices.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="45" selection-start="1331" selection-end="1363" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Loupan.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Loupan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="3" selection-start="417" selection-end="421" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Notice.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Notice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="42" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DanyuanbiaoChaobiaos.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/DanyuanbiaoChaobiaos.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -141,7 +114,7 @@
       <file leaf-file-name="Xunjiandanmingxis.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Xunjiandanmingxis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="21" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
+            <state line="34" column="8" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,7 +123,25 @@
       <file leaf-file-name="Xunjiandans.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Xunjiandans.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="123" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0">
+            <state line="19" column="16" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Xunjianzhis.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Xunjianzhis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Xunjiandians.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Xunjiandians.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,28 +156,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Louges.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Louges.java">
+      <file leaf-file-name="Dicts.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Dicts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+            <state line="14" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Loupans.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/Loupans.java">
+      <file leaf-file-name="Loucengs.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Loucengs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="251" selection-end="251" vertical-scroll-proportion="0.43222004">
+            <state line="14" column="13" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Danyuan.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Danyuan.java">
+      <file leaf-file-name="Notices.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+            <state line="44" column="45" selection-start="1331" selection-end="1363" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Weixiudans.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/Weixiudans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="69" selection-start="2555" selection-end="2555" vertical-scroll-proportion="-0.088709675">
               <folding />
             </state>
           </provider>
@@ -208,7 +208,6 @@
         <option value="$PROJECT_DIR$/app/controllers/Xunjianxiangmus.java" />
         <option value="$PROJECT_DIR$/app/controllers/Xunjianzhis.java" />
         <option value="$PROJECT_DIR$/app/models/Louceng.java" />
-        <option value="$PROJECT_DIR$/app/controllers/Weixiudans.java" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/models/Xunjiandian.java" />
@@ -218,6 +217,7 @@
         <option value="$PROJECT_DIR$/app/controllers/DanyuanbiaoChaobiaos.java" />
         <option value="$PROJECT_DIR$/app/controllers/Xunjiandanmingxis.java" />
         <option value="$PROJECT_DIR$/app/controllers/Xunjiandans.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Weixiudans.java" />
       </list>
     </option>
   </component>
@@ -651,31 +651,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="75" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Xunjiandian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="49" selection-start="902" selection-end="902" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="31" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/DanyuanbiaoChaobiao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="7" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Dict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Louceng.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="13" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" />
@@ -698,23 +673,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Louges.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="45" selection-start="1331" selection-end="1363" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Xunjiandans.java">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Loupans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="123" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0">
+        <state line="20" column="29" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Xunjiandanmingxis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="21" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
+        <state line="34" column="8" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Xunjianzhis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Xunjiandians.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Xunjiandans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="16" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -733,16 +729,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Louges.java">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Dicts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Loupans.java">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Loucengs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="251" selection-end="251" vertical-scroll-proportion="0.43222004">
+        <state line="14" column="13" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Notices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="45" selection-start="1331" selection-end="1363" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Weixiudans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="69" selection-start="2555" selection-end="2555" vertical-scroll-proportion="-0.088709675">
           <folding />
         </state>
       </provider>
