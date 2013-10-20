@@ -2,6 +2,8 @@ package controllers;
 
 import models.Xunjiandan;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -27,8 +29,8 @@ public class Xunjiandans extends Application {
         System.out.println(params.get("maxTime"));
 
        Xunjiandan xunjiandan = Xunjiandan.find("id=" + params.get("id")).first();
-        xunjiandan.巡检终止时间 = params.get("maxTime");
-        xunjiandan.巡检起始时间 = params.get("minTime");
+        xunjiandan.巡检终止时间 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(Long.parseLong(params.get("maxTime"))));
+        xunjiandan.巡检起始时间 =new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(Long.parseLong(params.get("minTime"))));
         xunjiandan.是否完成 = true;
 
         xunjiandan.save();

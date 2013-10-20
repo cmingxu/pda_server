@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class DanyuanbiaoChaobiaos extends Application {
     public static void index(){
-        List<DanyuanbiaoChaobiao> danyuanbiaoChaobiaos = DanyuanbiaoChaobiao.findAll();
+        List<DanyuanbiaoChaobiao> danyuanbiaoChaobiaos = DanyuanbiaoChaobiao.find("抄表终止日期='当前抄表期间'").fetch();
         renderJSON(danyuanbiaoChaobiaos);
     }
 
