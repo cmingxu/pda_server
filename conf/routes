@@ -27,7 +27,14 @@ POST    /chaobiao                               DanyuanbiaoChaobiaos.update
 
 
 GET     /dicts                                  Dicts.index
-
+GET     /yf_huxings                             YFHuxings.index
+GET     /yf_fjlxs                               YFFjlxs.index
+GET     /yf_hx_fjlxs                            YFHxFjlxs.index
+GET     /yf_ysdxs                               YFYsdxs.index
+GET     /yf_fjlx_ysdxs                          YFFjlxYsdxs.index
+GET     /yf_ysxms                               YFYsxms.index
+POST    /yf_yz_yfd                              YFYzYfds.index
+POST    /yf_kfs_yfd                             YFKfsYfds.index
 
 
 
