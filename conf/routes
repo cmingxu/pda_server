@@ -33,8 +33,8 @@ GET     /yf_hx_fjlxs                            YFHxFjlxs.index
 GET     /yf_ysdxs                               YFYsdxs.index
 GET     /yf_fjlx_ysdxs                          YFFjlxYsdxs.index
 GET     /yf_ysxms                               YFYsxms.index
-POST    /yf_yz_yfd                              YFYzYfds.index
-POST    /yf_kfs_yfd                             YFKfsYfds.index
+POST    /yf_yz_yfd                              YFYzYfds.create
+POST    /yf_kfs_yfd                             YFKfsYfds.create
 
 
 

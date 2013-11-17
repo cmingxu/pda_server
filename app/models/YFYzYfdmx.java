@@ -4,6 +4,7 @@ import play.db.jpa.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,21 +16,24 @@ import javax.persistence.Table;
 @Entity
 @Table(name="YF_YZ_YFDMX")
 public class YFYzYfdmx extends Model {
-    public int DJID;
+    public long DJID;
     public int JCZT;
     public String JCR;
-    public String JCSJ;
+    public Date JCSJ;
     public String FJSM;
     public int DXID;
     public String WTMS;
-    public String WTZP;
+//    public String WTZP;
     public String FWQLJ;
-    public String WXZT;
+    public boolean WXZT;
     public String WCSRR;
-    public String WCSRSJ;
+    public Date WCSRSJ;
     public int FJLXID;
 
-    public YFYzYfdmx(int DJID, int JCZT, String JCR, String JCSJ, String FJSM, int DXID, String WTMS, String WTZP, String FWQLJ, String WXZT, String WCSRR, String WCSRSJ, int FJLXID) {
+    public YFYzYfdmx() {
+    }
+
+    public YFYzYfdmx(int DJID, int JCZT, String JCR, Date JCSJ, String FJSM, int DXID, String WTMS,  String FWQLJ, boolean WXZT, String WCSRR, Date WCSRSJ, int FJLXID) {
         this.DJID = DJID;
         this.JCZT = JCZT;
         this.JCR = JCR;
@@ -37,7 +41,7 @@ public class YFYzYfdmx extends Model {
         this.FJSM = FJSM;
         this.DXID = DXID;
         this.WTMS = WTMS;
-        this.WTZP = WTZP;
+//        this.WTZP = WTZP;
         this.FWQLJ = FWQLJ;
         this.WXZT = WXZT;
         this.WCSRR = WCSRR;
