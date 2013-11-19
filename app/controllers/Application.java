@@ -10,6 +10,7 @@ import models.*;
 
 public class Application extends Controller {
     public static String current_user;
+    public static String image_dir = "C:\\\\attachments" + "\\";
 
     @Before
     public static void logRequest(){

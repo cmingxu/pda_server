@@ -23,7 +23,6 @@ public class YFYzYfdmx extends Model {
     public String FJSM;
     public int DXID;
     public String WTMS;
-//    public String WTZP;
     public String FWQLJ;
     public boolean WXZT;
     public String WCSRR;
@@ -33,7 +32,8 @@ public class YFYzYfdmx extends Model {
     public YFYzYfdmx() {
     }
 
-    public YFYzYfdmx(int DJID, int JCZT, String JCR, Date JCSJ, String FJSM, int DXID, String WTMS,  String FWQLJ, boolean WXZT, String WCSRR, Date WCSRSJ, int FJLXID) {
+    public YFYzYfdmx(int DJID, int JCZT, String JCR, Date JCSJ, String FJSM, int DXID, String WTMS,  String FWQLJ,
+                     boolean WXZT, String WCSRR, Date WCSRSJ, int FJLXID) {
         this.DJID = DJID;
         this.JCZT = JCZT;
         this.JCR = JCR;
@@ -41,7 +41,7 @@ public class YFYzYfdmx extends Model {
         this.FJSM = FJSM;
         this.DXID = DXID;
         this.WTMS = WTMS;
-//        this.WTZP = WTZP;
+        this.FWQLJ = FWQLJ;
         this.FWQLJ = FWQLJ;
         this.WXZT = WXZT;
         this.WCSRR = WCSRR;

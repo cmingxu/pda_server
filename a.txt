@@ -1,0 +1,41 @@
+Listening for transport dt_socket at address: 8000
+23:44:27,146 INFO  ~ Starting C:\Users\xcm\Documents\javaprojects\server
+23:44:27,669 WARN  ~ You're running Play! in DEV mode
+23:44:27,754 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+23:45:06,857 INFO  ~ Connected to jdbc:sqlserver://127.0.0.1;databaseName=wy_JMJY;
+23:45:08,277 ERROR ~ Unsuccessful: alter table YF_KFS_YFDMX add DXID int not null
+23:45:08,277 ERROR ~ ALTER TABLE 只允许添加满足下述条件的列: 列可以包含空值；或者列具有指定的 DEFAULT 定义；或者要添加的列是标识列或时间戳列；或者，如果前几个条件均未满足，则表必须为空以允许添加此列。不能将列"DXID"添加到非空表"YF_KFS_YFDMX"中，因为它不满足上述条件。
+23:45:08,351 INFO  ~ Application 'server' is now started !
+23:45:51,463 DEBUG ~ GET::/wancheng?id=8&desc=%E5%9F%BA%E6%9C%AC%E5%AE%8C%E6%88%90
+int get_user
+fuxilian:
+23:45:51,463 DEBUG ~ fuxilian:
+authorizationfuxilian:
+fuxilian
+current user is fuxilian
+23:45:54,403 DEBUG ~ GET::/jiedan?id=9
+int get_user
+fuxilian:
+23:45:54,403 DEBUG ~ fuxilian:
+authorizationfuxilian:
+fuxilian
+current user is fuxilian
+23:46:58,974 DEBUG ~ GET::/daixiu?id=9&desc=%E5%81%9C%E5%B7%A5%E5%BE%85%E6%96%99
+int get_user
+fuxilian:
+23:46:58,975 DEBUG ~ fuxilian:
+authorizationfuxilian:
+fuxilian
+current user is fuxilian
+~        _            _ 
+~  _ __ | | __ _ _  _| |
+~ | '_ \| |/ _' | || |_|
+~ |  __/|_|\____|\__ (_)
+~ |_|            |__/   
+~
+~ play! 1.2.2, http://www.playframework.org
+~
+~ Ctrl+C to stop
+~ 
+~ ...
+��ֹ������������(Y/N)? 

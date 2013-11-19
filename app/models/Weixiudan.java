@@ -46,7 +46,7 @@ public class Weixiudan extends Model {
     public String 楼层名称;
     public String 报修方式;
     public String 修改人;
-    public String 修改人联系方式;
+//    public String 修改人联系方式;
     public String 维修开始时间;
     public String 维修终止时间;
     public String 待修原因;

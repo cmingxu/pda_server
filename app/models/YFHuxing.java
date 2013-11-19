@@ -16,12 +16,12 @@ import javax.persistence.Table;
 @Table(name="YF_HX")
 public class YFHuxing extends Model {
     public String HXMC;
-    public String HCBH;
+    public String HXBH;
     public String HXT;
 
-    public YFHuxing(String HXMC, String HCBH, String HXT) {
+    public YFHuxing(String HXMC, String HXBH, String HXT) {
         this.HXMC = HXMC;
-        this.HCBH = HCBH;
+        this.HXBH = HXBH;
         this.HXT = HXT;
     }
 }

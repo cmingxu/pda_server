@@ -19,45 +19,58 @@ import java.util.List;
 public class YFYzYfds extends Application {
 
 
-    public static void create(File image0, File image1, File image2){
+    public static void create(File image0, File image1, File image2, File image3) {
+        YFYzYfdmx yfYzYfdmx;
         System.out.println(params.get("mDanyuanbianhao"));
         System.out.println(params.get("mDesc"));
         System.out.println(params.get("mDxID"));
         System.out.println(params.get("mFjlxID"));
 
         YFYzYfd yfYzYfd = YFYzYfd.find("DYBH='" + params.get("mDanyuanbianhao") + "'").first();
-//        YFYzYfd yfYzYfd = YFYzYfd.find("").first();
-        YFYzYfdmx yfYzYfdmx = new YFYzYfdmx();
-        yfYzYfdmx.DJID = yfYzYfd.getId();
-        yfYzYfdmx.DXID = Integer.parseInt(params.get("mDxID"));
-        yfYzYfdmx.FJLXID = Integer.parseInt(params.get("mFjlxID"));
-        yfYzYfdmx.WXZT = false;
-        yfYzYfdmx.WTMS = params.get("mDesc");
-        yfYzYfdmx.WCSRR = current_user;
-        yfYzYfdmx.WCSRSJ = new Date();
-        yfYzYfdmx.FWQLJ = "";
+        if (yfYzYfd != null) {
+            yfYzYfdmx = YFYzYfdmx.find("DJID='" + yfYzYfd.id +
+                    "' AND DXID='" + params.get("mDxID") + "' AND FJLXID='" +
+                    params.get("mFjlxID") + "'"
+            ).first();
+            if (yfYzYfdmx == null) {
+                yfYzYfdmx = new YFYzYfdmx();
+            }
+            yfYzYfdmx.DJID = yfYzYfd.getId();
+            yfYzYfdmx.DXID = Integer.parseInt(params.get("mDxID"));
+            yfYzYfdmx.FJLXID = Integer.parseInt(params.get("mFjlxID"));
+            yfYzYfdmx.WXZT = false;
+            yfYzYfdmx.WTMS = params.get("mDesc");
+            yfYzYfdmx.WCSRR = current_user;
+            yfYzYfdmx.WCSRSJ = new Date();
+            yfYzYfdmx.FWQLJ = "";
+            yfYzYfdmx.save();
 
+            String attach_dir = image_dir + "yf_yz_yfd" + "\\" + yfYzYfdmx.id;
+            File file = new File(attach_dir);
+            if (!file.exists()) {
+                file.mkdir();
+            }
+            if (image0 != null) {
+                image0.renameTo(new File(attach_dir + "\\" + image0.getName()));
+            }
 
+            if (image1 != null) {
+                image1.renameTo(new File(attach_dir + "\\" + image1.getName()));
+            }
 
+            if (image2 != null) {
+                image2.renameTo(new File(attach_dir + "\\" + image2.getName()));
+            }
 
-        yfYzYfdmx.save();
-        String attach_dir = "C:\\\\attachments" + "\\" + "yf_yz_yfd"  + "\\" + yfYzYfdmx.id;
-        File file = new File(attach_dir);
-        if(!file.exists()){
-            file.mkdir();
+            if (image3 != null) {
+                image3.renameTo(new File(attach_dir + "\\" + image3.getName()));
+            }
+
+            yfYzYfdmx.FWQLJ = attach_dir;
+            yfYzYfdmx.save();
+            renderJSON("{\"result\": \"true\"}");
+        } else {
+            renderJSON("{\"result\": \"false\", \"message\": \"此单元不在验收范围内。\"}");
         }
-        if (image0 != null) {
-            image0.renameTo(new File(attach_dir + "\\" + image0.getName()));
-        }
-
-        if (image1 != null) {
-            image1.renameTo(new File(attach_dir + "\\" + image1.getName()));
-        }
-
-        if(image2 != null){
-            image2.renameTo(new File(attach_dir + "\\" + image2.getName()));
-        }
-
-        renderJSON("{}");
     }
 }

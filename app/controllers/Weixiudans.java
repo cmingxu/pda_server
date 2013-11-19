@@ -50,7 +50,7 @@ public class Weixiudans extends Application {
         weixiudan.维修范围 = params.get("mBaoxiuLeibie");
         weixiudan.维修地点 = params.get("mLoupanName") + "/" + params.get("mDanyuanName");
         weixiudan.修改人 = params.get("mBaoxiuren");
-        weixiudan.修改人联系方式 = params.get("mYezhuPhone");
+//        weixiudan.修改人联系方式 = params.get("mYezhuPhone");
         weixiudan.单元编号 = params.get("mDanyuanBianhao");
         weixiudan.住户编号 = params.get("mZhuhuBianhao");
         weixiudan.报修人 = params.get("mBaoxiuren");
@@ -72,30 +72,28 @@ public class Weixiudans extends Application {
         weixiudan.save().toString();
 
         System.out.print(weixiudan.save());
+        System.out.println("save");
         weixiudan.save();
 
 
-        String attach_dir = "C:\\\\attachments" + "\\" + weixiudan.id;
-
-        StringBuilder sb = new StringBuilder();
+        String attach_dir = image_dir + "weixiudan" + "\\" + weixiudan.id;
+        File file = new File(attach_dir);
+        if (!file.exists()) {
+            file.mkdir();
+        }
         if (image0 != null) {
-            sb.append(image0.getName());
+            System.out.println(attach_dir + "\\" + image0.getName());
             image0.renameTo(new File(attach_dir + "\\" + image0.getName()));
         }
 
         if (image1 != null) {
-            sb.append(",");
-            sb.append(image1.getName());
             image1.renameTo(new File(attach_dir + "\\" + image1.getName()));
         }
 
         if(image2 != null){
-            sb.append(",");
-            sb.append(image2.getName());
             image2.renameTo(new File(attach_dir + "\\" + image2.getName()));
         }
 
-        renderJSON("{}");
-//        ok();
+        renderJSON("{\"result\": \"true\"}");
     }
 }
