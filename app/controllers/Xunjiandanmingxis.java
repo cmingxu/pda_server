@@ -32,7 +32,7 @@ public class Xunjiandanmingxis extends Application {
         Xunjiandanmingxi xunjiandanmingxi = Xunjiandanmingxi.find("id=" + params.get("id")).first();
         xunjiandanmingxi.值 = params.get("zhi");
         xunjiandanmingxi.值id = params.get("zhiid");
-        xunjiandanmingxi.巡检时间 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(Long.parseLong(params.get("xunjianshijian"))));
+        xunjiandanmingxi.巡检时间 = params.get("xunjianshijian");
         xunjiandanmingxi.说明 = params.get("shuoming");
         xunjiandanmingxi.标识 = params.get("biaoshi");
         xunjiandanmingxi.save();
