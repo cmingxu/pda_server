@@ -19,7 +19,7 @@ public class DanyuanbiaoChaobiaos extends Application {
 
     public static void update(){
         String id = params.get("id");
-        String bencidushu = params.get("bencidushu");
+        double bencidushu = Double.parseDouble(params.get("bencidushu"));
 
         DanyuanbiaoChaobiao danyuanbiaoChaobiao = DanyuanbiaoChaobiao.find("ID='" + id + "'").first();
         danyuanbiaoChaobiao.上次读数 = danyuanbiaoChaobiao.本次读数;

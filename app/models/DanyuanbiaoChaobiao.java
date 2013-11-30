@@ -20,10 +20,10 @@ public class DanyuanbiaoChaobiao extends Model {
     public String ID;
     public String 单元编号;
     public String 表名称;
-    public String 上次读数;
-    public String 本次读数;
+    public double 上次读数;
+    public double 本次读数;
 
-    public DanyuanbiaoChaobiao(String 单元编号, String 表名称, String 上次读数, String 本次读数, String ID) {
+    public DanyuanbiaoChaobiao(String 单元编号, String 表名称, double 上次读数, double 本次读数, String ID) {
         this.单元编号 = 单元编号;
         this.表名称 = 表名称;
         this.上次读数 = 上次读数;

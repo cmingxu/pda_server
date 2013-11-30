@@ -20,11 +20,11 @@ public class Xunjiandanmingxi extends Model {
     public String 值id;
     public String 巡检时间;
     public String 标识;
-    public String 值;
+    public double 值;
     public String 说明;
 
 
-    public Xunjiandanmingxi(String 巡检单id, String 项目id, String 值id, String 巡检时间, String 标识, String 值, String 说明) {
+    public Xunjiandanmingxi(String 巡检单id, String 项目id, String 值id, String 巡检时间, String 标识, double 值, String 说明) {
         this.巡检单id = 巡检单id;
         this.项目id = 项目id;
         this.值id = 值id;

@@ -18,7 +18,7 @@ public class Xunjianxiangmu extends Model {
     public String 巡检点id;
     public String 名称;
     public String 标准;
-    public String 说明;
+public String 说明;
 
 
     public Xunjianxiangmu(String 巡检点id, String 名称, String 标准, String 说明) {
